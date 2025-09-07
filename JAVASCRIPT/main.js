@@ -1,4 +1,4 @@
-const fruits = ["banana", "mango", "ananas"] // starting arry
+const fruits = ["banana", "mango", "ananas"] // starting an array
 
 fruits.unshift("strawberry") // adds the element to start
 
