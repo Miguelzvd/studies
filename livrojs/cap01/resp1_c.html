@@ -1,0 +1,12 @@
+<script>
+  const valorProduto = Number(prompt("Valor do produto:"));
+  const parcelas = Number(prompt("Número de parcelas:"));
+
+  const desconto = valorProduto * 0.1;
+  const valorComDesconto = (valorProduto - desconto).toFixed(2);
+  const valorParcelas = (valorProduto / parcelas).toFixed(2);
+
+  alert(
+    `Preço: $${valorProduto}\nA vista: R$${valorComDesconto}\nOu ${parcelas}x $R$${valorParcelas}`
+  );
+</script>
