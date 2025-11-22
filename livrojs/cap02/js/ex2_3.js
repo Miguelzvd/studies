@@ -5,8 +5,6 @@ const outResp3 = document.querySelector("#outResp3");
 const frm = document.querySelector("form");
 
 frm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
   const inVeiculo = frm.inVeiculo.value;
   const inPreco = frm.inPreco.value;
 
@@ -16,4 +14,6 @@ frm.addEventListener("submit", (e) => {
   outResp1.innerText = `Promoção ${inVeiculo}`;
   outResp2.innerText = `Entrada de R$: ${valorEntrada.toFixed(2)}`;
   outResp3.innerText = `+ 12x de R$ ${restoAPagar.toFixed(2)}`;
+
+  e.preventDefault();
 });
