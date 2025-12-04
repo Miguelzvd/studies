@@ -21,5 +21,5 @@ frm.addEventListener("submit", (e) => {
 frm.addEventListener("reset", (e) => {
   e.preventDefault();
 
-  resp.innerText = "";
+  resp.innerText = ""; 
 });
