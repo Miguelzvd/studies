@@ -6,5 +6,14 @@ frm.addEventListener("submit", (e) => {
 
   const num = Number(frm.inNum.value);
 
-  console.log(num);
+  const quadrado = Math.sqrt(num);
+
+  const quadradoPerfeito =  Number.isInteger(quadrado);
+
+  if (quadradoPerfeito) {
+    resp.innerText = `Raiz: ${quadrado}`
+  
+  } else {
+    resp.innerText = `Não há raiz exata para ${num}`
+  }
 });
