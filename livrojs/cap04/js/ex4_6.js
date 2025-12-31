@@ -24,7 +24,15 @@ frm.addEventListener("submit", (e) => {
   const qtdNota10 = Math.floor(resto / 10);
   resto = valorSaque % 10;
 
-  resp1.innerText = `Notas de R$ 100: ${qtdNota100}`;
-  resp2.innerText = `Notas de R$ 50: ${qtdNota50}`;
-  resp3.innerText = `Notas de R$ 10: ${qtdNota10}`;
+  if (qtdNota100 >= 1) {
+    resp1.innerText = `Notas de R$ 100: ${qtdNota100}`;
+  }
+
+  if (qtdNota50 >= 1) {
+    resp2.innerText = `Notas de R$ 50: ${qtdNota50}`;
+  }
+
+  if (qtdNota10 >= 1) {
+    resp3.innerText = `Notas de R$ 10: ${qtdNota10}`;
+  }
 });
