@@ -6,9 +6,9 @@ frm.addEventListener("submit", (e) => {
 
   const num = Number(frm.inNum.value);
 
-  const quadrado = Math.sqrt(num);
+  const raiz = Math.sqrt(num);
 
-  const quadradoPerfeito =  Number.isInteger(quadrado);
+  const quadradoPerfeito =  Number.isInteger(raiz);
 
   if (quadradoPerfeito) {
     resp.innerText = `Raiz: ${quadrado}`
