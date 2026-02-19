@@ -1,21 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Par ou Impar</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css" />
   </head>
   <body>
+    <img src="img/exerc.jpg" alt="Imagem exercício" />
+
+    <h1>Programa Par ou Ímpar</h1>
     <form>
       <p>
         Número:
-        <input type="number" id="inNum" />
+        <input type="number" step="1" min="0" id="inNum" required />
       </p>
-      <input type="submit" value="Verificar se é Par ou Ímpar" />
+      <input type="submit" value="Exibir Notas para Saque" />
     </form>
 
     <h3 id="outResp"></h3>
-
-    <script src="./js/resp4_10.js"></script>
+    <script src="js/resp4_10.js"></script>
   </body>
 </html>
