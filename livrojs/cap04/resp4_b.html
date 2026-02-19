@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <img src="img/exerc.jpg" alt="Imagem exercício" />
+
+    <h1>Programa Verifica Velocidade</h1>
+    <form>
+      <p>
+        Velocidade Permitida:
+        <input type="number" step="1" min="0" id="inVelPerm" required />
+      </p>
+      <p>
+        Velocidade do Condutor:
+        <input type="number" step="1" min="0" id="inVelCond" required />
+      </p>
+      <input type="submit" value="Verificar Velocidade" />
+    </form>
+
+    <h3 id="outResp"></h3>
+    <script src="js/resp4_b.js"></script>
+  </body>
+</html>
